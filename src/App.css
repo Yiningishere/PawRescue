@@ -1,0 +1,49 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  place-items: unset;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: unset;
+    background-color: unset;
+  }
+  button {
+    background-color: unset;
+  }
+}
+
+.donation-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; /* Adjust the gap as needed */
+  padding: 16px; /* Adjust the padding as needed */
+}
+
+.donation-button .amount {
+  font-size: 1.5em; /* Adjust the font size as needed */
+  font-weight: bold;
+}
+
+.donation-button .description {
+  font-size: 0.875em; /* Adjust the font size as needed */
+  text-align: center;
+  color: #666; /* Adjust the color as needed */
+}
